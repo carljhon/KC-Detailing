@@ -112,7 +112,7 @@ h4 {
     box-shadow: none;
     outline: 0 none transparent;
     -webkit-appearance:none;
- }
+}
 
 textarea {
     margin-top: 40px;
@@ -538,6 +538,60 @@ html, body {
 
 .section-form .btn {
     margin-top: 40px;
+}
+
+/* Form */
+#regForm {
+    background-color: #ffffff;
+    padding: 0px;
+    width: 100%;
+}
+.tab, #paintCorrection_and_polishingFrom_450, #ceramicCoating_and_paintProtectionFrom_800 { /* Hide all steps by default: */
+    display: none;
+}
+.tab label {
+    color: gray;
+    display: block;
+    text-align: left;
+}
+.invalid::placeholder {
+    color: rgb(255, 39, 39);
+}
+#regForm select:hover {
+    cursor: pointer;
+}
+#regForm span {
+    font-size: smaller;
+}
+#regForm button {
+    background-color: #04AA6D;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+}
+#regForm button:hover {
+    opacity: 0.8;
+}
+#prevBtn {
+    background-color: #bbbbbb;
+}
+.step { /* Make circles that indicate the steps of the form: */
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+.step.active {
+    opacity: 1;
+}
+.step.finish { /* Mark the steps that are finished and valid: */
+    background-color: #04AA6D;
 }
 
 /* FOOTER

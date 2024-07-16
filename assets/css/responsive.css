@@ -126,6 +126,11 @@
 		font-size: 80px;
 	}
 
+	/* Form */
+	#regForm span {
+		font-size: 11px;
+	}
+
 	/* Modal */
 	.modal-header {
 		height: 350px;
@@ -388,6 +393,11 @@
 	/* Section: Form */
 	.section-form .btn {
 		margin-top: 25px;
+	}
+
+	/* Form */
+	#regForm span {
+		font-size: 10px;
 	}
 
 	/* Modal */

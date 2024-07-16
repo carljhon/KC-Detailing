@@ -114,7 +114,7 @@
                     <div class="col-md-6 col-md-offset-3">
                         <h2>About Us</h2>
                         <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ex tortor, elementum eget ante at, porttitor dapibus enim. Proin ut interdum leo, id blandit mauris. Nunc lacinia iaculis felis, in aliquam felis pulvinar varius.</p>
+                        <p>Welcome to KC Detailing, where passion meets precision. Nestled on the vibrant Gold Coast, our family-owned detailing business boasts two decades of experience in transforming vehicles into pristine works of art. Experience the difference with our Mobile Car Detailing Business. Let us elevate your ride to a level of perfection that's truly unmatched.</p>
                         <a href="tel:+61438348337" class="btn btn-fill">Call Us Now!</a>
                     </div>
                 </div>
@@ -185,21 +185,21 @@
                         <div class="service">
                             <i class="bi bi-car-front-fill"></i>
                             <h4>Car Detailing</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ex tortor, elementum eget ante at, porttitor dapibus enim. Proin ut interdum leo, id blandit mauris. Nunc lacinia iaculis felis, in aliquam felis pulvinar varius.</p>
+                            <p>KC Detailing, a family-owned Gold Coast business, offers unmatched mobile car detailing services that transform vehicles into pristine works of art.</p>
                         </div><!-- /.service -->
                     </div>
                     <div class="col-sm-4">
                         <div class="service">
                             <i class="bi bi-people"></i>
                             <h4>Family Team</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ex tortor, elementum eget ante at, porttitor dapibus enim. Proin ut interdum leo, id blandit mauris. Nunc lacinia iaculis felis, in aliquam felis pulvinar varius.</p>
+                            <p>As a devoted husband and wife team, we've dedicated ourselves to perfecting the art of automotive care, specializing in cars, boats, and motorcycles.</p>
                         </div><!-- /.service -->
                     </div>
                     <div class="col-sm-4">
                         <div class="service">
                             <i class="bi bi-bar-chart-line"></i>
                             <h4>2 Decades</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ex tortor, elementum eget ante at, porttitor dapibus enim. Proin ut interdum leo, id blandit mauris. Nunc lacinia iaculis felis, in aliquam felis pulvinar varius.</p>
+                            <p>Boasting 20 years of dedicated service on the Gold Coast, KC Detailing has built a reputation for exceptional mobile car detailing, earning the trust and loyalty of countless satisfied customers.</p>
                         </div><!-- /.service -->
                     </div>
                 </div>
@@ -299,9 +299,9 @@
         <section id="contact" class="site-section section-form text-center">
             <div class="container">
 
-                <h3>Contact</h3>
+                <!-- <h3>Contact</h3>
                 <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                <form>
+                <form action="mailto:KCDETAILING2019@outlook.com" method="post" enctype="text/plain">
                     <div class="row">
                         <div class="col-sm-6">
                             <input type="text" name="name" class="form-control mt-x-0" placeholder="Name" required>
@@ -314,7 +314,123 @@
                         </div>
                     </div>
                     <button href="#" class="btn btn-border" type="submit">Message Me <span class="glyphicon glyphicon-send"></span></button>
+                </form> -->
+
+                <h3>Contact</h3>
+                <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+                <form id="regForm">
+                    <!-- One "tab" for each step in the form: -->
+                    <h4>Get A Free Car Detailing Gold Coast Quote Today!</h4>
+                    <span>Please fill out the form below, and one of our car detailing professionals will be in touch with you shortly!</span><br><br><br>
+
+                    <div class="tab">
+                        <p>
+                            <label>Car Make, Model & Year: </label>
+                            <input class="form-control mt-x-0" placeholder="Toyota Fortuner 2021" name="carMake_modelYear">
+                        </p>
+                        <p>
+                            <label>Service You Require? </label>
+                            <select id="serviceRequire" name="Service" class="form-control mt-x-0">
+                                <option value="Standard Car Detailing From $99">Standard Car Detailing From $99</option>
+                                <option value="Interior Detailing From $199">Interior Detailing From $199</option>
+                                <option value="Full Detailing Package From $349">Full Detailing Package From $349</option>
+                                <option value="Paint Correction & Polishing From $450" id="paint">Paint Correction & Polishing From $450</option>
+                                <option value="Ceramic Coating & Paint Protection From $800">Ceramic Coating & Paint Protection From $800</option>
+                            </select>
+                        </p>
+
+                        <!-- $450 -->
+                        <div id="paintCorrection_and_polishingFrom_450">
+                            <p>
+                                <label>Car Colour: </label>
+                                <input class="form-control mt-x-0" placeholder="Blue" name="carColour">
+                            </p>
+                            <p>
+                                <label>Current Condition Of Paint Surface: </label>
+                                <select name="Service" class="form-control mt-x-0">
+                                    <option value="Only Light Swirls and/or Blemishes">Only Light Swirls and/or Blemishes</option>
+                                    <option value="Light Swirls and/or Some Minor Scratches">Light Swirls and/or Some Minor Scratches</option>
+                                    <option value="Paint Faded and/or Chalky Appearance">Paint Faded and/or Chalky Appearance</option>
+                                    <option value="Heavy Swirls and/or Deeper Scratches">Heavy Swirls and/or Deeper Scratches</option>
+                                    <option value="Paint is Peeling and/or Bubbling">Paint is Peeling and/or Bubbling</option>
+                                </select>
+                            </p>
+                        </div>
+
+                        <!-- $800 -->
+                        <div id="ceramicCoating_and_paintProtectionFrom_800">
+                            <p>
+                                <label>Car Colour: </label>
+                                <input class="form-control mt-x-0" placeholder="Blue" name="carColour">
+                            </p>
+                            <p>
+                                <label>What Would You Like Protected? </label>
+                                <select name="whatWouldYouLikeProtected" class="form-control mt-x-0">
+                                    <option value="Exterior Paint Surface Only">Exterior Paint Surface Only</option>
+                                    <option value="Complete Exterior (inc Alloy Wheels & Glass)">Complete Exterior (inc Alloy Wheels & Glass)</option>
+                                    <option value="Full Protection (inc Alloy Wheels, Glass & Interior)">Full Protection (inc Alloy Wheels, Glass & Interior)</option>
+                                    <option value="Other / I'm Not Sure Just Yet">Other / I'm Not Sure Just Yet</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label>How Many Ceramic Coating Layers? </label>
+                                <select name="howManyCeramicCoatingLayers" class="form-control mt-x-0">
+                                    <option value="1 Layer of Ceramic Coating 9H (Standard Protection - 5 Year Warranty)">1 Layer of Ceramic Coating 9H (Standard Protection - 5 Year Warranty)</option>
+                                    <option value="2 Layers of Ceramic Coating 9H (Ultimate Protection - Extended Warranty)">2 Layers of Ceramic Coating 9H (Ultimate Protection - Extended Warranty)</option>
+                                    <option value="3 Layers of Ceramic Coating 9H (Superior Protection - Extended Warranty Warranty)">3 Layers of Ceramic Coating 9H (Superior Protection - Extended Warranty Warranty)</option>
+                                    <option value="I'm Not Sure Just Yet">I'm Not Sure Just Yet</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label>Include Window Tinting? </label>
+                                <select name="includeWindowTinting" class="form-control mt-x-0">
+                                    <option value="Yes, Please">Yes, Please</option>
+                                    <option value="No, Thanks">No, Thanks</option>
+                                    <option value="I'd Consider It">I'd Consider It</option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <p>
+                            <label>Your Name: </label>
+                            <input class="form-control mt-x-0" placeholder="John Citizen" name="name">
+                        </p>
+                        <p>
+                            <label>Your Phone: </label>
+                            <input class="form-control mt-x-0" placeholder="0412 123 456" name="phone">
+                        </p>
+                        <p>
+                            <label>Your Email (optional): </label>
+                            <input class="form-control mt-x-0" placeholder="john@example.com" name="email">
+                        </p>
+                        <p>
+                            <label>Preferred Contact Method? </label>
+                            <select name="preferredContactMethod" class="form-control mt-x-0">
+                                <option value="Phone Call">Phone Call</option>
+                                <option value="SMS">SMS</option>
+                                <option value="Email">Email</option>
+                                <option value="Any of the above (Phone, SMS or Email)">Any of the above (Phone, SMS or Email)</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label>Suburb in Gold Coast: </label>
+                            <input class="form-control mt-x-0" placeholder="Varsity Lakes" name="suburbInGoldCoast">
+                        </p>
+                    </div>
+                    <div style="overflow:auto;">
+                      <div style="float:right;">
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                      </div>
+                    </div>
+                    <!-- Circles which indicates the steps of the form: -->
+                    <div style="text-align:center;margin-top:40px;">
+                      <span class="step"></span>
+                      <span class="step"></span>
+                    </div>
                 </form>
+
                 <a class="btn btn-border" href="tel:+61438348337">Call Us Now <i class="bi bi-telephone-fill"></i></a>
             </div>
         </section><!-- /.section-form -->
@@ -462,6 +578,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
     <script src="assets/js/jquery.countTo.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/formScript.js"></script>
   
 </body>
 </html>
