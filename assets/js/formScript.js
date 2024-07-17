@@ -61,7 +61,6 @@ function validateForm() {
     if(hasFinishedClass != "finish"){
       document.getElementsByClassName("step")[currentTab].className += " finish";
     }
-    console.log(document.getElementsByClassName("step")[currentTab].classList)
   }
   return valid; // return the valid status
 }
