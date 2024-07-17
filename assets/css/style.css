@@ -589,9 +589,10 @@ html, body {
 }
 .step.active {
     opacity: 1;
+    background-color: #399918;
 }
 .step.finish { /* Mark the steps that are finished and valid: */
-    background-color: #04AA6D;
+    background-color: #1A5319;
 }
 
 /* FOOTER

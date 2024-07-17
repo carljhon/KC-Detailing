@@ -56,7 +56,12 @@ function validateForm() {
   // }
   // If the valid status is true, mark the step as finished and valid:
   if (valid) {
-    document.getElementsByClassName("step")[currentTab].className += " finish";
+    var hasFinishedClass = document.getElementsByClassName("step")[currentTab].classList[1]
+
+    if(hasFinishedClass != "finish"){
+      document.getElementsByClassName("step")[currentTab].className += " finish";
+    }
+    console.log(document.getElementsByClassName("step")[currentTab].classList)
   }
   return valid; // return the valid status
 }
